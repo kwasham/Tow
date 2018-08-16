@@ -1,6 +1,7 @@
 defmodule Tow.Player do
   @moduledoc false
 
+alias Barracks.Troops
 
   @enforce_keys [:name]
   defstruct [:name, resources: %{}, troops: %{}]

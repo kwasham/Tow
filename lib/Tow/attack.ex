@@ -5,13 +5,16 @@ defmodule Tow.Attack do
 
     for x <- attacker.troops.amount do
 
-      a = attacker.troops.farts.attack
+
 
 
     end
 
 
   end
+
+
+
 
 
 end
