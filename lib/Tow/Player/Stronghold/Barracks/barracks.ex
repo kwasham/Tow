@@ -17,7 +17,7 @@ defmodule Stronghold.Barracks do
       troop = Troops.get_troop(id)
       troop = Map.from_struct(troop)
 
-      kirk = []
+
       jess = Enum.map(list, fn x -> Enum.into(kirk, troop) end)
 
       %{player | troops: jess}
