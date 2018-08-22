@@ -11,16 +11,17 @@ defmodule Stronghold.Barracks do
 
   def train_troops(player, troops, amount) do
 
-      range = 1..amount
-      list = Enum.to_list(range)
-      id = troop_id(troops)
-      troop = Troops.get_troop(id)
-      troop = Map.from_struct(troop)
 
 
-      jess = Enum.map(list, fn x -> Enum.into(kirk, troop) end)
+     sadie = Map.update(player.troops, troops, amount, &(&1 + amount))
 
-      %{player | troops: jess}
+     #troop = Enum.map(kirk, fn {k, v} -> {k, (v + amount)} end)
+
+
+     #jess = Map.put(troop, troops, amount)
+
+
+      %{player | troops: sadie}
 
    end
 

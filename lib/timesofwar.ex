@@ -12,6 +12,13 @@ defmodule TimesOfWar do
 
     opts = [strategy: :one_for_one, name: Tow.Supervisor]
     Supervisor.start_link(children, opts)
+
+
+    end
+
+  def hello do
+    :world
+
   end
 end
 
